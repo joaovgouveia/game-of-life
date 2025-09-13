@@ -77,7 +77,7 @@ class Plate:
         canvas = ""
         for y in range(self.height):
             for x in range(self.width):
-                canvas += "# " if self.get_cell((y, x)) else "· "
+                canvas += "■ " if self.get_cell((y, x)) else "  "
             canvas += "\n"
 
         return canvas
